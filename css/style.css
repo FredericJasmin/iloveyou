@@ -1,0 +1,95 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Happy Monkey', cursive;
+}
+/* particles */
+#particlesContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* background */
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(0, 162, 255) 50%, rgb(0, 174, 255) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+.bg3 {
+  animation-duration:5s;
+}
+/* divs */
+.container {
+  text-align: center;
+}
+/* texts */
+.title {
+  margin-top: 3%;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+}
+.description {
+  color: #fff;
+  font-weight: bolder;
+}
+.rainbow {
+  animation: colorRotate 6s linear 0s infinite;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+/* keyframes */
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+/* footer */
+footer {
+  position: fixed;
+  width: 100%;
+  height: 5%;
+  bottom: 0px;
+  justify-content: space-between;
+}
+
+footer p {
+  text-align: center;
+  font-size: small;
+  color: #fff;
+}
